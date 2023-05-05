@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+    <style>
+
+    section{
+        justify-content : center; /* Выравнивение по центру строки */
+        align-items : center; /*Выравнивение по центру страницы */
+        margin-top: 100px;
+    }
+    form{
+        position : relative;
+        display : inline-block;
+        padding : 15px 30px;
+        color : #2196f3;
+        font-size : 24px;
+        transition : 0.2s;
+    }
+    </style>
+
+    <section>
+    <form action="" method="post" novalidate>
+        <div>
+            {{ form.csrf_token }}
+        </div>
+        {% for field in form if field.name != 'csrf_token' %}
+            <div>
+                {{ field.label() }}
+                {{ field() }}
+                {% for error in field.errors %}
+                    <div class="error">{{ error }}</div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </form>
+    </section>
+
+{% endblock %}
