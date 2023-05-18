@@ -63,12 +63,12 @@
     margin-top: 20px;
     text-decoration: none;
     letter-spacing: 2px;
-    
+    transition: 0.5s;
 }
 .slider .imgBx .content a:hover{
     background:  #ff0157;
     letter-spacing: 5px;
-    transition: 1s;
+    transition: 0.5s;
 }
 @media (max-width: 500px) {
     .slider .imgBx .content h2{

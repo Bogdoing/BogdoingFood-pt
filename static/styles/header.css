@@ -67,9 +67,11 @@ header ul li a{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background: rgba(255, 255, 255, 0.45); 
-        backdrop-filter: blur(8px); /* This be the blur */
-        /*background: #fff;*/
+        
+        /* background: rgba(255, 255, 255, 0.45); */
+        background: rgba(202, 202, 202, 0.45); 
+        backdrop-filter: blur(8px); 
+
     }
     header .navigation li{
         margin-left: 0;
