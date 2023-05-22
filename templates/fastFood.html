@@ -12,7 +12,7 @@
 
 
 
-<section>
+<section class="s-card">
     <div class="card" style="width: 18rem;">
         <img src="../static/image/testimg/drink5.jpg" class="card-img-top" alt="Loading...">
         <div class="card-body">
@@ -56,6 +56,16 @@
             </div>
         </div>
     </div>
+
+    {% for card in cards %}
+    <ul>
+        <li>{{ card.card.card-title }}</li>
+
+        <!-- <em>{{ student.name }}:</em> {{ student.score }}/{{ max_score }} -->
+
+    </ul>
+    {% endfor %}
+
 </section>
 
 

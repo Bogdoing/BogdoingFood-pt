@@ -1,6 +1,8 @@
 from flask import Flask, render_template, redirect
 from loginform import LoginForm
 
+import DATA
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret_key'
 
